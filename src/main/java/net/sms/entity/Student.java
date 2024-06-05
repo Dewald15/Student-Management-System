@@ -1,4 +1,4 @@
-package net.studentmanagement.sms.entity;
+package net.sms.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

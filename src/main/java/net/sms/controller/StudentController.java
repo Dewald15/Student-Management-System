@@ -1,10 +1,12 @@
 package net.sms.controller;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import net.sms.dto.StudentDto;
 import net.sms.service.StudentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,7 +34,15 @@ public class StudentController {
     }
 
     @PostMapping("/students")
-    public String saveStudent(@ModelAttribute("student") StudentDto studentDto){
+    public String saveStudent(@Valid @ModelAttribute("student") StudentDto studentDto,
+                              BindingResult result,
+                              Model model){
+
+        if(result.hasErrors()){
+//            model.addAttribute("student", studentDto); // not needed as we are not redirecting or forwarding so student attribute is still active
+            return "create_student";
+        }
+
         studentService.createStudent(studentDto);
         return "redirect:/students";
     }

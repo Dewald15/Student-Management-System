@@ -81,3 +81,23 @@ To run the Student Management System, follow these steps:
 
 The application will start, and you can access it at `http://localhost:8080/students`.
 
+## Screenshots
+<div style="text-align: center;">
+
+### 1. **students.html**
+
+![Screenshot](src/main/resources/static/1.png)
+
+### 2. **create_student.html**
+
+![Screenshot](src/main/resources/static/2.png)
+
+### 3. **edit_student.html**
+
+![Screenshot](src/main/resources/static/3.png)
+
+### 4. **view_student.html**
+
+![Screenshot](src/main/resources/static/4.png)
+
+</div>

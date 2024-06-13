@@ -2,6 +2,16 @@
 
 The Student Management System is a Java Spring project that allows users to perform CRUD (Create, Read, Update, Delete) operations on student records.
 
+## Table of Contents
+
+1. [Technologies Used](#technologies-used)
+2. [Dependencies](#dependencies)
+4. [Configuration](#configuration)
+5. [Packages](#packages)
+6. [Views (Templates)](#views-templates)
+7. [Running the Application](#running-the-application)
+8. [Screenshots](#screenshots)
+
 ## Technologies Used
 
 - Java 22
